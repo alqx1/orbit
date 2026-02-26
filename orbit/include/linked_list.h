@@ -7,5 +7,6 @@ struct node {
 };
 
 void free_linked_list(struct node *head);
+struct node *insert_planet(struct node *head);
 
 #endif
