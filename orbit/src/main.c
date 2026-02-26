@@ -11,19 +11,21 @@
 
 int main() {
     struct planet p1 = {
-        .mass = 2000.f,
+        .mass = 1000.f,
         .radius = 20.f,
-        .position = {.x = 200, .y = 200},
-        .velocity = {.x = 30, .y = 0},
+        .position = {.x = 200, .y = 360},
+        .velocity = {.x = 30, .y = 120},
         .immovable = false,
+        .color = WHITE,
     };
 
     struct planet p2 = {
-        .mass = 2000.f,
+        .mass = 5000.f,
         .radius = 20.f,
-        .position = {.x = 600, .y = 200},
-        .velocity = {.x = -30, .y = 40},
-        .immovable = false,
+        .position = {.x = 600, .y = 360},
+        .velocity = {0},
+        .immovable = true,
+        .color = RED,
     };
 
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Orbit");

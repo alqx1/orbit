@@ -5,8 +5,6 @@
 #include <raymath.h>
 #include <stdbool.h>
 
-#include "structs.h"
-
 #define GET_PLANET_P(_node_p) ((struct planet*)_node_p->element)
 #define GET_PLANET(_node) ((struct planet*)_node->element)
 
@@ -15,6 +13,7 @@ struct planet {
     Vector2 velocity;
     float mass;
     float radius;
+    Color color;
     bool immovable;
 };
 
